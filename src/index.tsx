@@ -3,22 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 // import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { User } from './components/App/App.types';
 import { App } from './components/App';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
-const user: User = {
-  id: 1,
-  name: 'Jon',
-  email: 'mail@example.com',
-};
+
 
 root.render(
   <React.StrictMode>
-    <App user={user} />
+    <App />
   </React.StrictMode>
 );
 
